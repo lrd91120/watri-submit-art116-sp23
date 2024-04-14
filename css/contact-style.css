@@ -1,0 +1,160 @@
+/*
+details
+name: Lillie Davis
+last modified: Mar 24 
+submitted to: Contact Page, ART 116
+submitted time: 9 pm, 3/24/24
+*/
+
+/* hex code toolbox */
+.yellow {
+    color: #fdd438;
+}
+.red {
+    color: #ec5a29;
+}
+.blue {
+    color: #2848df;
+}
+.teal {
+    color: #68e1c1;
+}
+
+/* class name toolbox */
+/* "chinese-characters" means formatting for Chinese characters */
+/* "logo" means formatting for the logo at the top */
+/* "nav-bar" refers to the little clickable links across the top of the page */
+/* "red-display" makes content show up in red Aesthico. */
+/* "red-title" makes content show up in red Aesthico and larger than the "red-display" class. */
+/* "coming-soon" formats the unordered list at the bottom of the index. */
+
+/* helpful YouTube videos I used to... */
+/* position navigation bar: https://www.youtube.com/watch?v=86nTToBm2uQ */
+/* set background image: https://www.youtube.com/watch?v=zHZRFwWQt2w */
+
+
+/* font-face formatting below */
+/* Font Face Rule for Aesthico */
+@font-face {
+    font-family: 'aesthico';
+    src: url(../fonts/aesthico.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Font Face Rule for HanWangKanTan */
+@font-face {
+    font-family: 'hwkt';
+    src: url(../fonts/han-wang-kan-tan.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Font Face Rule for Work Sans */
+@font-face {
+    font-family: 'work sans';
+    src: url(../fonts/work-sans.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Font Face Rule for Work Sans bold */
+@font-face {
+    font-family: 'work sans bold';
+    src: url(../fonts/work-sans-bold.ttf);
+    font-style: normal;
+    font-weight: 800;
+}
+
+
+/* element formatting below */
+/* body margins set a baseline to keep everything centered unless stated otherwise in a rule below */
+body {
+    margin: 0 auto; /* Shorthand margin for centering */
+}
+
+.logo {
+    padding-top: 6px; /* Leaving this as 0px in case I need to adjust later */
+    padding-left: 37px;
+    width: 50%;
+    /* background-color: hotpink; I added this line to help me visualize the logo better on the page */
+}
+
+header {
+    font-family: 'work sans', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background: #fdd438 url(../images/contact-background.png) no-repeat; /* Setting yellow background color and background image */
+    background-size: 1000px;/*set background as absolute because as I went through to adjust different classes/elemnts, the size of the backgroudn would change! code I originally had in this line... background-size: contain*/
+    color: #2848df;
+    font-size: 1em;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    padding-top: 57px;
+    padding-left: 473px;
+    /* For next submission, continue researching how to evenly space out items in navigation bar */
+}
+
+.nav-bar a{
+    /*formatting just the words aka the links in the navigation bar*/
+    color: #ec5a29;
+    text-decoration:none; 
+    padding:20px; 
+}
+
+h1 {
+    font-family: aesthico;
+    font-size: 3em;
+    padding-top: 170px;
+    padding-left: 210px;
+    
+}
+
+h2 {
+    font-family: aesthico;
+    font-size: 2.4em;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+p {
+    font-family: 'work sans', sans-serif;
+    font-size: 1.2em;
+    padding-left: 50px;
+}
+
+.red-display {
+    color: #ec5a29;
+    font-family: aesthico;
+    font-size: 1em;
+    /* Making the bullets disappear from the list items */
+    list-style-type: none;
+    /* Making the navigation bar list items appear horizontal */
+    float: left; 
+}
+
+
+/*logo routing back to home page*/
+.red-square{
+    width:127px;
+    position:absolute;
+    top:34px;
+    left:37px;
+}
+
+/*form-matting incase I'd like to change the form's positioning later*/
+.form{
+}
+
+.directions{
+    width: 300px;
+    position: absolute;
+    top: 330px;
+    left: 590px;
+    
+}
